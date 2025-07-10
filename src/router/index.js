@@ -4,6 +4,7 @@ import Register from '../views/Register.vue'
 import Books from '../views/Books.vue'
 
 const routes = [
+  { path: '/', redirect: '/login' },
   { path: '/login', component: Login, name: 'login' },
   { path: '/register', component: Register, name: 'register' },
   { path: '/books', component: Books, name: 'books', meta: { requiresAuth: true } },
